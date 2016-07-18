@@ -10,11 +10,6 @@ gulp.task('connect', function () {
 
 gulp.task('default', ['connect', 'watch']);
 
-gulp.task('php', function () {
-  gulp.src('site/**/*.php')
-      .pipe(browserSync.reload());
-});
-
 gulp.task('watch', function () {
   gulp.watch('site/**/*.php').on('change', function () {
     browserSync.reload();
