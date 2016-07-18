@@ -1,0 +1,29 @@
+{
+  "name": "staywelcome.de",
+  "version": "1.0.0",
+  "description": "The StayWelcome website",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StayWelcome/staywelcome.de.git"
+  },
+  "keywords": [
+    "staywelcome",
+    "kirby",
+    "cms"
+  ],
+  "author": "Dom Habersack <dominik.habersack@netlight.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StayWelcome/staywelcome.de/issues"
+  },
+  "homepage": "https://github.com/StayWelcome/staywelcome.de#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-connect-php": "0.0.7"
+  }
+}
