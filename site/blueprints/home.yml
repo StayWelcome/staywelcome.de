@@ -4,6 +4,8 @@ fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text
+  abstract:
+    label: Abstract
     type:  textarea
+  madeupvalue:
+    label: YO ADD A FIELD IN site/blueprints/home.yml

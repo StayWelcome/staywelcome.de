@@ -1,17 +1,17 @@
-Title: Kirby Starterkit
+Title: StayWelcome
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: StayWelcome
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: The StayWelcome website
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords: staywelcome
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: © 2009-(date: Year) (link: http://staywelcome.de text: StayWelcome)
