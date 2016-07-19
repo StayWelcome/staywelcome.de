@@ -1,0 +1,30 @@
+$query-extra-small: 'min-width:  (30 * 12px)';
+$query-small:       'min-width:  (40 * 12px)'; // + 10
+$query-medium:      'min-width:  (60 * 12px)'; // + 20
+$query-large:       'min-width:  (90 * 12px)'; // + 30
+$query-extra-large: 'min-width: (140 * 12px)'; // + 50
+
+@mixin responsive-container() {
+  margin: 0 auto;
+  width: 96%;
+
+  @media ($query-extra-small) {
+    width: 92%;
+  }
+
+  @media ($query-small) {
+    width: 88%;
+  }
+
+  @media ($query-medium) {
+    width: 84%;
+  }
+
+  @media ($query-large) {
+    width: 80%;
+  }
+
+  @media ($query-extra-large) {
+    width: 76%;
+  }
+}
