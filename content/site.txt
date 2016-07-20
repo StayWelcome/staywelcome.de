@@ -14,4 +14,4 @@ Keywords: staywelcome
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://staywelcome.de text: StayWelcome)
+Copyright: © 2015-(date: Year) (link: http://staywelcome.de text: StayWelcome)
