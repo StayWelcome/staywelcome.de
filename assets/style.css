@@ -1,0 +1,42 @@
+body {
+  font-family: "Open Sans", Helvetica, "Helvetica Neue", Arial, sans-serif; }
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5; }
+
+li {
+  font-size: 1.6rem; }
+
+p {
+  font-size: 1.6rem;
+  margin: 0 0 1.5em; }
+
+.logo {
+  background-image: url("/assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  font-size: 1.6rem;
+  height: 3.75em;
+  text-indent: -999em;
+  width: 14em; }
+
+.main {
+  margin: 0 auto;
+  width: 96%; }
+  @media (min-width: 360px) {
+    .main {
+      width: 92%; } }
+  @media (min-width: 480px) {
+    .main {
+      width: 88%; } }
+  @media (min-width: 720px) {
+    .main {
+      width: 84%; } }
+  @media (min-width: 1080px) {
+    .main {
+      width: 80%; } }
+  @media (min-width: 1680px) {
+    .main {
+      width: 76%; } }

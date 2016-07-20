@@ -24,6 +24,8 @@
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
-    "gulp-connect-php": "0.0.7"
+    "gulp-connect-php": "0.0.7",
+    "gulp-sass": "^2.3.2",
+    "normalize.css": "^4.2.0"
   }
 }

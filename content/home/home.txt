@@ -2,14 +2,16 @@ Title: Home
 
 ----
 
-Text: Yay! If you are seeing this, the installation of Kirby worked. :)
+Text: This is working.
 
-## Get started
+----
 
-- Go to the (link: panel text: panel) to give Kirby's admin interface a try
-- Check out the (link: http://getkirby.com/docs text: docs) and start building your own site
-- Follow (twitter: @getkirby) on Twitter for updates
-- Visit the (link: http://forum.getkirby.com text: forum) to connect with other Kirby users
-- (link: http://getkirby.com/support text: Get in contact) if you need support.
+Abstract: 
 
-**Have fun with Kirby!**
+For a true and genuine welcome you need both someone to open the door and someone to enter, both with an open mindset, willingness to learn from each other and engage with each other.
+
+We believe it is on us to build the international and intercultural society we want to live in and therefore want to take ownership on how we welcome others to our community.
+
+This is exactly what we do by connecting those with the motivation to become part of this society with those who believe that difference can make us better. 
+
+Sometimes this can be accomplished by simply getting a Job.
