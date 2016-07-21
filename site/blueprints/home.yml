@@ -1,9 +1,7 @@
 title: Home
-pages: false
+pages:
+  template: offer
 fields:
-  title:
-    label: Title
-    type:  text
   abstract:
     label: Abstract
     type:  textarea

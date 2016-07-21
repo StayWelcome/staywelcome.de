@@ -1,0 +1,8 @@
+title: Offer
+pages: false
+fields:
+  title:
+    label: Title
+  content:
+    label: Content
+    type: textarea

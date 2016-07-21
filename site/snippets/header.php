@@ -14,10 +14,16 @@
   </head>
 
   <body>
-    <header>
-      <a class="logo" href="<?php echo url(); ?>">
-        <?php echo $site->title(); ?>
-      </a>
+    <header class="header">
+      <div class="header__logo">
+        <?php snippet('logo'); ?>
+      </div>
 
-      <?php snippet('menu'); ?>
+      <div class="header__navigation">
+        <?php snippet('menu'); ?>
+      </div>
+
+      <div class="header__langauge-select">
+        <?php snippet('language-select'); ?>
+      </div>
     </header>
