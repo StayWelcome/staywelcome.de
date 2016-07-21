@@ -1,5 +1,32 @@
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
 body {
   font-family: "Open Sans", Helvetica, "Helvetica Neue", Arial, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5em; }
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.3em; }
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75em; }
 
 html {
   font-size: 62.5%;
@@ -11,6 +38,31 @@ li {
 p {
   font-size: 1.6rem;
   margin: 0 0 1.5em; }
+
+ul {
+  margin: 0 0 1.2em; }
+
+.header {
+  display: flex;
+  margin-bottom: 1.2em;
+  padding: 0.6em 2%; }
+  .header__navigation {
+    flex-grow: 1; }
+
+.language-select {
+  list-style: none;
+  padding-left: 0; }
+  .language-select__language {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding-left: 1.8125em; }
+    .language-select__language--de {
+      background-image: url("/assets/svg/flag--germany.svg"); }
+    .language-select__language--en {
+      background-image: url("/assets/svg/flag--england.svg"); }
 
 .logo {
   background-image: url("/assets/svg/logo.svg");

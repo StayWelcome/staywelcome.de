@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Flags/Germany</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="♻️-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Flags/Germany">
+            <rect id="Background" fill="#1D1D1D" x="2" y="5" width="20" height="14" rx="1"></rect>
+            <rect id="Gold" fill="#F2C736" x="3" y="14" width="18" height="4"></rect>
+            <rect id="Red" fill="#FF635A" x="3" y="10" width="18" height="4"></rect>
+            <rect id="Black" fill="#1D1D1D" x="3" y="6" width="18" height="4"></rect>
+        </g>
+    </g>
+</svg>
