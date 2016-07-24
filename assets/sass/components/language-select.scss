@@ -1,23 +1,60 @@
 .language-select {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding-left: 0;
+  position: relative;
+
+  &__current-language {
+    background: $color-link--lightest;
+    border: 0;
+    border-radius: 1.8em;
+    color: $color-neutral--darkest;
+    cursor: pointer;
+    padding: 0.6em 2em;
+    z-index: 1;
+
+    &:focus,
+    &:hover,
+    &.is-active {
+      background-color: $color-link--lighter;
+      outline: 0;
+    }
+  }
 
   &__language {
-    background: {
-      position: left center;
-      repeat: no-repeat;
-      size: 1.5em 1.5em; // 24px 24px
-    }
-    display: inline-block;
-    font-size: 1.6rem;
-    padding-left: 1.8125em; // 29px
+    color: $color-neutral--darkest;
+    text-decoration: none;
+    display: block;
+    padding: 0.375em 0.5625em;
 
-    &--de {
-      background-image: url('/assets/svg/flag--germany.svg');
+    &:hover {
+      background: $color-link--lightest;
     }
+  }
 
-    &--en {
-      background-image: url('/assets/svg/flag--england.svg');
+  &__languages {
+    background: $color-neutral--lightest;
+    border: {
+      color: $color-link--lightest;
+      style: solid;
+      width: 0 0.1em 0.1em;
+    }
+    border-bottom: {
+      left-radius: 0.4em;
+      right-radius: 0.4em;
+    }
+    display: none;
+    left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 1.8em 0 0 0;
+    position: absolute;
+    right: 0;
+    top: 1.8em;
+
+    &.is-visible {
+      display: block;
     }
   }
 }
