@@ -23,7 +23,7 @@ bodyTransform.translate(-4, -1, 33.0184, 0);
 
 const getRandomNumber = (from, to) => Math.random() * (to - from) + from;
 
-function flapWings(leftWing, rightWing, body, flaps) {
+function flapWings(leftWing, rightWing, body, flaps = 0) {
     if (flaps <= 0) {
         const timeout = getRandomNumber(WINGS_PAUSE_MIN_MILLIS, WINGS_PAUSE_MAX_MILLIS);
         const flaps = getRandomNumber(WINGS_NUM_SUCCESSIVE_FLAPS_MIN, WINGS_NUM_SUCCESSIVE_FLAPS_MAX);
@@ -54,6 +54,6 @@ export default function (svgElement) {
         const wingRight = logo.select('#wing-right');
         const body = logo.select('#body');
 
-        flapWings(wingLeft, wingRight, body, 0);
+        flapWings(wingLeft, wingRight, body);
     }
 };

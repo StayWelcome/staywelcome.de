@@ -59,12 +59,14 @@
 	(0, _languageSwitch2.default)();
 
 	window.addEventListener('load', function (e) {
-
 	    var logoObject = document.getElementById('logoObject');
+
 	    if (typeof logoObject !== 'undefined') {
 	        var svgDocument = logoObject.contentDocument;
+
 	        if (svgDocument !== 'undefined') {
 	            var svgElement = svgDocument.getElementById('staywelcome-logo');
+
 	            (0, _animation2.default)(svgElement);
 	        }
 	    }
@@ -109,7 +111,7 @@
 	        var wingRight = logo.select('#wing-right');
 	        var body = logo.select('#body');
 
-	        flapWings(wingLeft, wingRight, body, 0);
+	        flapWings(wingLeft, wingRight, body);
 	    }
 	};
 
@@ -144,7 +146,9 @@
 	    return Math.random() * (to - from) + from;
 	};
 
-	function flapWings(leftWing, rightWing, body, flaps) {
+	function flapWings(leftWing, rightWing, body) {
+	    var flaps = arguments.length <= 3 || arguments[3] === undefined ? 0 : arguments[3];
+
 	    if (flaps <= 0) {
 	        var timeout = getRandomNumber(WINGS_PAUSE_MIN_MILLIS, WINGS_PAUSE_MAX_MILLIS);
 	        var _flaps = getRandomNumber(WINGS_NUM_SUCCESSIVE_FLAPS_MIN, WINGS_NUM_SUCCESSIVE_FLAPS_MAX);
