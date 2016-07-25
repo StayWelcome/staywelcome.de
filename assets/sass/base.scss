@@ -2,6 +2,26 @@ body {
   font-family: $font-family-content;
 }
 
+button {
+  background: blue;
+  border: 0;
+  border-radius: 0.125em; // 2px
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.75em 1.5625em; // 12px 25px
+}
+
+fieldset {
+  border: 0.1em solid gray;
+  border-radius: 0.2em;
+  margin: 0;
+  padding: 0.5em 0.9em 1.1em;
+}
+
+form {
+  margin-bottom: 1.2em;
+}
+
 h1,
 h2,
 h3,
@@ -32,6 +52,36 @@ html {
   line-height: 1.5;
 }
 
+input {
+  &[type="email"] {
+    border: 0.0625em solid gray; // 1px
+    border-radius: 0.125em; // 2px
+    font-size: 1.6rem;
+    margin-bottom: 0.75em; // 12px
+    padding: 0.3125em 0.5625em; // 5px 9px
+    width: 100%;
+
+    &:focus {
+      border-color: blue;
+      outline: 0;
+    }
+  }
+}
+
+label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.375em; // 6px
+}
+
+legend {
+  font: {
+    size: 1.6rem;
+    weight: 700;
+  }
+  padding: 0 0.625em; // 0 10px
+}
+
 li {
   font-size: 1.6rem;
 }
@@ -39,6 +89,21 @@ li {
 p {
   font-size: 1.6rem;
   margin: 0 0 1.5em; // 0 0 24px
+}
+
+textarea {
+  border: 0.0625em solid gray; // 1px
+  border-radius: 0.125em; // 2px
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.75em; // 12px
+  padding: 0.3125em 0.5625em; // 5px 9px
+  width: 100%;
+
+  &:focus {
+    border-color: blue;
+    outline: 0;
+  }
 }
 
 ul {

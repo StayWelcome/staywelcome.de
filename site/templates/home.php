@@ -8,4 +8,6 @@
   <?php endforeach; ?>
 </main>
 
+<?php snippet('contact-form'); ?>
+
 <?php snippet('footer'); ?>

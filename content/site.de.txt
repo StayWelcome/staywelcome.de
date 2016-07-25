@@ -6,7 +6,7 @@ Author: StayWelcome
 
 ----
 
-Description: The StayWelcome website
+Description: Die StayWelcome Webseite
 
 ----
 

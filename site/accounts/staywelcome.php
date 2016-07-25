@@ -8,8 +8,8 @@ email: >
 language: en
 role: admin
 history:
+  - thank-you
   - home/for-supporters
   - home
   - home/for-helpers
   - home/for-employers
-  - home/for-refugees
