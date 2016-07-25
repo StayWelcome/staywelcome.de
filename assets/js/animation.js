@@ -1,7 +1,7 @@
 import Snap from 'snapsvg';
 
-const WINGS_PAUSE_MIN_MILLIS = 2000;
-const WINGS_PAUSE_MAX_MILLIS = 10000;
+const WINGS_PAUSE_MIN_MILLIS = 1000;
+const WINGS_PAUSE_MAX_MILLIS = 2000;
 
 const WINGS_NUM_SUCCESSIVE_FLAPS_MIN = 1;
 const WINGS_NUM_SUCCESSIVE_FLAPS_MAX = 5;
@@ -18,8 +18,7 @@ const rightWingTransform = new Snap.Matrix();
 rightWingTransform.scale(0.3, 0.8, 33.0184, 0);
 
 const bodyTransform = new Snap.Matrix();
-bodyTransform.scale(1.1);
-bodyTransform.translate(-4, -1, 33.0184, 0);
+bodyTransform.scale(1.1, 1.1, 33.0184, 30);
 
 const getRandomNumber = (from, to) => Math.random() * (to - from) + from;
 

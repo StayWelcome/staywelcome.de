@@ -121,8 +121,8 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var WINGS_PAUSE_MIN_MILLIS = 2000;
-	var WINGS_PAUSE_MAX_MILLIS = 10000;
+	var WINGS_PAUSE_MIN_MILLIS = 1000;
+	var WINGS_PAUSE_MAX_MILLIS = 2000;
 
 	var WINGS_NUM_SUCCESSIVE_FLAPS_MIN = 1;
 	var WINGS_NUM_SUCCESSIVE_FLAPS_MAX = 5;
@@ -139,8 +139,7 @@
 	rightWingTransform.scale(0.3, 0.8, 33.0184, 0);
 
 	var bodyTransform = new _snapsvg2.default.Matrix();
-	bodyTransform.scale(1.1);
-	bodyTransform.translate(-4, -1, 33.0184, 0);
+	bodyTransform.scale(1.1, 1.1, 33.0184, 30);
 
 	var getRandomNumber = function getRandomNumber(from, to) {
 	    return Math.random() * (to - from) + from;
