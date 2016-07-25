@@ -1,0 +1,41 @@
+$_colors: (
+  blue:   #3ca4d0,
+  gray:   #a1a1a1,
+  green:  #81c789,
+  purple: #635996
+);
+
+$_shades: (
+  blue: (
+    base:             map-get($_colors, blue),
+    lighter:  lighten(map-get($_colors, blue), 18%),
+    lightest: lighten(map-get($_colors, blue), 36%)
+  ),
+  gray: (
+    base:             map-get($_colors, gray),
+    lighter:  lighten(map-get($_colors, gray), 24%),
+    lightest: lighten(map-get($_colors, gray), 36%),
+    darker:    darken(map-get($_colors, gray), 20%),
+    darkest:   darken(map-get($_colors, gray), 52%)
+  )
+);
+
+@function get-shade($color, $hue) {
+  @return map-get(map-get($_shades, $color), $hue);
+}
+
+$color-link--lightest: get-shade(blue, lightest);
+$color-link--lighter:  get-shade(blue, lighter);
+$color-link:           get-shade(blue, base);
+
+$color-neutral--lightest: get-shade(gray, lightest);
+$color-neutral--lighter:  get-shade(gray, lighter);
+$color-neutral:           get-shade(gray, base);
+$color-neutral--darker:   get-shade(gray, darker);
+$color-neutral--darkest:  get-shade(gray, darkest);
+
+
+// blue:           #3CA4D0
+// blue--lighter:  #66C1E2
+// blue--lightest: #8FD1E7
+
