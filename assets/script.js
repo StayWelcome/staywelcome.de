@@ -57,7 +57,20 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _languageSwitch2.default)();
-	(0, _animation2.default)();
+
+	window.addEventListener('load', function (e) {
+	    var logoObject = document.getElementById('logoObject');
+
+	    if (typeof logoObject !== 'undefined') {
+	        var svgDocument = logoObject.contentDocument;
+
+	        if (svgDocument !== 'undefined') {
+	            var svgElement = svgDocument.getElementById('staywelcome-logo');
+
+	            (0, _animation2.default)(svgElement);
+	        }
+	    }
+	});
 
 /***/ },
 /* 1 */
@@ -91,8 +104,15 @@
 	    value: true
 	});
 
-	exports.default = function () {
-	    // here goes the SVG animation code...
+	exports.default = function (svgElement) {
+	    if (typeof svgElement !== 'undefined') {
+	        var logo = new _snapsvg2.default(svgElement);
+	        var wingLeft = logo.select('#wing-left');
+	        var wingRight = logo.select('#wing-right');
+	        var body = logo.select('#body');
+
+	        flapWings(wingLeft, wingRight, body);
+	    }
 	};
 
 	var _snapsvg = __webpack_require__(3);
@@ -100,6 +120,53 @@
 	var _snapsvg2 = _interopRequireDefault(_snapsvg);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var WINGS_PAUSE_MIN_MILLIS = 1000;
+	var WINGS_PAUSE_MAX_MILLIS = 2000;
+
+	var WINGS_NUM_SUCCESSIVE_FLAPS_MIN = 1;
+	var WINGS_NUM_SUCCESSIVE_FLAPS_MAX = 5;
+
+	var FLAP_DURATION_MIN_MILLIS = 100;
+	var FLAP_DURATION_MAX_MILLIS = 200;
+
+	var identityMatrix = new _snapsvg2.default.Matrix();
+
+	var leftWingTransform = new _snapsvg2.default.Matrix();
+	leftWingTransform.scale(0.3, 0.8, 33.0184, 0);
+
+	var rightWingTransform = new _snapsvg2.default.Matrix();
+	rightWingTransform.scale(0.3, 0.8, 33.0184, 0);
+
+	var bodyTransform = new _snapsvg2.default.Matrix();
+	bodyTransform.scale(1.1, 1.1, 33.0184, 30);
+
+	var getRandomNumber = function getRandomNumber(from, to) {
+	    return Math.random() * (to - from) + from;
+	};
+
+	function flapWings(leftWing, rightWing, body) {
+	    var flaps = arguments.length <= 3 || arguments[3] === undefined ? 0 : arguments[3];
+
+	    if (flaps <= 0) {
+	        var timeout = getRandomNumber(WINGS_PAUSE_MIN_MILLIS, WINGS_PAUSE_MAX_MILLIS);
+	        var _flaps = getRandomNumber(WINGS_NUM_SUCCESSIVE_FLAPS_MIN, WINGS_NUM_SUCCESSIVE_FLAPS_MAX);
+
+	        window.setTimeout(flapWings.bind(null, leftWing, rightWing, body, _flaps), timeout);
+	    } else {
+	        var time = getRandomNumber(FLAP_DURATION_MIN_MILLIS, FLAP_DURATION_MAX_MILLIS);
+
+	        leftWing.animate({ transform: leftWingTransform }, time, mina.easeout, openWings.bind(null, leftWing, rightWing, body, flaps, time));
+	        rightWing.animate({ transform: rightWingTransform }, time, mina.easeout);
+	        body.animate({ transform: bodyTransform }, time, mina.easeout);
+	    }
+	}
+
+	function openWings(leftWing, rightWing, body, flaps, time) {
+	    leftWing.animate({ transform: identityMatrix }, time / 2, mina.easein, flapWings.bind(null, leftWing, rightWing, body, --flaps));
+	    rightWing.animate({ transform: identityMatrix }, time / 2, mina.easein);
+	    body.animate({ transform: identityMatrix }, time / 2, mina.easein);
+	}
 
 	;
 

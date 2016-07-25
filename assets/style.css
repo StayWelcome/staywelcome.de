@@ -177,9 +177,6 @@ ul {
       display: block; }
 
 .logo {
-  background-image: url("/assets/svg/logo.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
   display: block;
   font-size: 1.6rem;
   height: 3.75em;
