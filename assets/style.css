@@ -7,6 +7,23 @@ html {
 body {
   font-family: "Open Sans", Helvetica, "Helvetica Neue", Arial, sans-serif; }
 
+button {
+  background: blue;
+  border: 0;
+  border-radius: 0.125em;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.75em 1.5625em; }
+
+fieldset {
+  border: 0.1em solid gray;
+  border-radius: 0.2em;
+  margin: 0;
+  padding: 0.5em 0.9em 1.1em; }
+
+form {
+  margin-bottom: 1.2em; }
+
 h1,
 h2,
 h3,
@@ -32,6 +49,27 @@ html {
   font-size: 62.5%;
   line-height: 1.5; }
 
+input[type="email"] {
+  border: 0.0625em solid gray;
+  border-radius: 0.125em;
+  font-size: 1.6rem;
+  margin-bottom: 0.75em;
+  padding: 0.3125em 0.5625em;
+  width: 100%; }
+  input[type="email"]:focus {
+    border-color: blue;
+    outline: 0; }
+
+label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.375em; }
+
+legend {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0 0.625em; }
+
 li {
   font-size: 1.6rem; }
 
@@ -39,8 +77,27 @@ p {
   font-size: 1.6rem;
   margin: 0 0 1.5em; }
 
+textarea {
+  border: 0.0625em solid gray;
+  border-radius: 0.125em;
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.75em;
+  padding: 0.3125em 0.5625em;
+  width: 100%; }
+  textarea:focus {
+    border-color: blue;
+    outline: 0; }
+
 ul {
   margin: 0 0 1.2em; }
+
+.alert {
+  background: lightgray;
+  border: 0.0625em solid gray;
+  border-radius: 0.125em;
+  margin-bottom: 0.375em;
+  padding: 0.6875em 0.875em; }
 
 .header {
   display: flex;
