@@ -4,6 +4,7 @@ var connect = require('gulp-connect-php');
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
+var webpack = require('webpack-stream');
 
 gulp.task('connect', function () {
   connect.server({}, function () {
@@ -22,7 +23,7 @@ gulp.task('default', ['css', 'js', 'connect', 'watch']);
 gulp.task('js', function () {
   return gulp.src('assets/js/**/*.js')
       .pipe(jshint())
-      .pipe(concat('script.js'))
+      .pipe(webpack(require('./webpack.config.js')))
       .pipe(gulp.dest('assets'));
 });
 
