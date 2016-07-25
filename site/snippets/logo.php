@@ -1,3 +1,5 @@
 <a class="logo" href="<?php echo url(); ?>">
-  <?php echo $site->title(); ?>
+  <object type="image/svg+xml" data="assets/svg/logo.svg" class="logo">
+      <?php echo $site->title(); ?>
+  </object>
 </a>
