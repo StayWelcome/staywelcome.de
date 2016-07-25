@@ -15,16 +15,16 @@ body {
 }
 
 button {
-  background: blue;
+  background: $color-action;
   border: 0;
   border-radius: 0.125em; // 2px
-  color: white;
+  color: $color-neutral--darkest;
   font-size: 1.6rem;
   padding: 0.75em 1.5625em; // 12px 25px
 }
 
 fieldset {
-  border: 0.1em solid gray;
+  border: 0.1em solid $color-neutral--darker;
   border-radius: 0.2em;
   margin: 0;
   padding: 0.5em 0.9em 1.1em;
@@ -66,7 +66,7 @@ html {
 
 input {
   &[type="email"] {
-    border: 0.0625em solid gray; // 1px
+    border: 0.0625em solid $color-neutral; // 1px
     border-radius: 0.125em; // 2px
     font-size: 1.6rem;
     margin-bottom: 0.75em; // 12px
@@ -74,7 +74,7 @@ input {
     width: 100%;
 
     &:focus {
-      border-color: blue;
+      border-color: $color-focus;
       outline: 0;
     }
   }
@@ -104,7 +104,7 @@ p {
 }
 
 textarea {
-  border: 0.0625em solid gray; // 1px
+  border: 0.0625em solid $color-neutral; // 1px
   border-radius: 0.125em; // 2px
   display: block;
   font-size: 1.6rem;
@@ -113,7 +113,7 @@ textarea {
   width: 100%;
 
   &:focus {
-    border-color: blue;
+    border-color: $color-focus;
     outline: 0;
   }
 }

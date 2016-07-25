@@ -17,12 +17,25 @@ $_shades: (
     lightest: lighten(map-get($_colors, gray), 36%),
     darker:    darken(map-get($_colors, gray), 20%),
     darkest:   darken(map-get($_colors, gray), 52%)
+  ),
+  green: (
+    base:             map-get($_colors, green),
+    lighter:  lighten(map-get($_colors, green), 18%),
+    lightest: lighten(map-get($_colors, green), 36%)
   )
 );
 
 @function get-shade($color, $hue) {
   @return map-get(map-get($_shades, $color), $hue);
 }
+
+$color-action--lightest: get-shade(green, lightest);
+$color-action--lighter:  get-shade(green, lighter);
+$color-action:           get-shade(green, base);
+
+$color-focus--lightest: get-shade(blue, lightest);
+$color-focus--lighter:  get-shade(blue, lighter);
+$color-focus:           get-shade(blue, base);
 
 $color-link--lightest: get-shade(blue, lightest);
 $color-link--lighter:  get-shade(blue, lighter);
