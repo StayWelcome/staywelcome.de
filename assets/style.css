@@ -142,7 +142,7 @@ ul {
     border-radius: 1.8em;
     color: #1c1c1c;
     cursor: pointer;
-    padding: 0.6em 2em;
+    padding: 0.375em 1.25em;
     z-index: 1; }
     .language-select__current-language:focus, .language-select__current-language:hover, .language-select__current-language.is-active {
       background-color: #86c7e2;
