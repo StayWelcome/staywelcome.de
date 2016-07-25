@@ -1,0 +1,8 @@
+branches:
+  only:
+    - master
+install:
+  - npm install
+language: node_js
+script:
+  - gulp deploy
