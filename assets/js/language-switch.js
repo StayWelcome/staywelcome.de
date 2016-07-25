@@ -1,6 +1,4 @@
-(function () {
-  'use strict';
-
+export default function () {
   var currentLanguage = document.querySelector('.js-language-switch');
   var languageOptions = document.querySelector('.js-language-options');
 
@@ -8,4 +6,4 @@
     currentLanguage.classList.toggle('is-active');
     languageOptions.classList.toggle('is-visible');
   });
-})();
+};
