@@ -1,11 +1,27 @@
 .header {
+  position: relative;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.2em;
-  padding: 0.6em 2%;
+  margin-bottom: 4em;
+  padding: 0.6em 110px 0.6em 2%;
+  border-bottom: 8px solid #635996;
 
-  &__language-select {
+  transition-duration: 0.3s;
+  transition-property: all;
+
+  &--sticky {
+    position: fixed;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    z-index: 100;
+    border-width: 2px;
+    top:0;
+
+    .logo {
+      height: 11.9mm;
+    }
   }
 
   &__logo {
@@ -13,5 +29,29 @@
 
   &__navigation {
     flex-grow: 1;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        background-color: #635996;
+        padding: 10px 20px;
+        margin: 0;
+
+        &:not(last-child) {
+          margin-right: 20px;
+        }
+        
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }

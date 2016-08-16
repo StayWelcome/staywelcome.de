@@ -113,75 +113,84 @@ ul {
   padding: 0.6875em 0.875em; }
 
 .header {
+  position: relative;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.2em;
-  padding: 0.6em 2%; }
+  margin-bottom: 4em;
+  padding: 0.6em 110px 0.6em 2%;
+  border-bottom: 8px solid #635996;
+  transition-duration: 0.3s;
+  transition-property: all; }
+  .header--sticky {
+    position: fixed;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    z-index: 100;
+    border-width: 2px;
+    top: 0; }
+    .header--sticky .logo {
+      height: 11.9mm; }
   .header__navigation {
     flex-grow: 1; }
+    .header__navigation ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      padding: 0; }
+      .header__navigation ul li {
+        display: inline-block;
+        background-color: #635996;
+        padding: 10px 20px;
+        margin: 0; }
+        .header__navigation ul li:not(last-child) {
+          margin-right: 20px; }
+        .header__navigation ul li a {
+          color: white;
+          text-decoration: none; }
+
+.footer {
+  position: relative; }
+  .footer__language-select {
+    right: 20px;
+    position: absolute;
+    display: inline-block;
+    bottom: -6px; }
 
 .language {
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 1.5em 1.5em;
+  background-size: 1.6em 1em;
   display: inline-block;
   font-size: 1.6rem;
-  padding-left: 1.8125em;
-  text-decoration: inherit; }
+  padding: 0.2em 0.4em 0.2em 1.6em;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: white; }
   .language--de {
     background-image: url("/assets/svg/flag--germany.svg"); }
   .language--en {
     background-image: url("/assets/svg/flag--england.svg"); }
 
 .language-select {
-  display: flex;
-  flex-direction: column;
   list-style: none;
-  padding-left: 0;
-  position: relative; }
-  .language-select__current-language {
-    background: #d0e9f4;
-    border: 0;
-    border-radius: 1.8em;
-    color: #1c1c1c;
-    cursor: pointer;
-    padding: 0.375em 1.25em;
-    z-index: 1; }
-    .language-select__current-language:focus, .language-select__current-language:hover, .language-select__current-language.is-active {
-      background-color: #86c7e2;
-      outline: 0; }
-  .language-select__language {
-    color: #1c1c1c;
-    text-decoration: none;
-    display: block;
-    padding: 0.375em 0.5625em; }
-    .language-select__language:hover {
-      background: #d0e9f4; }
-  .language-select__languages {
-    background: #fdfdfd;
-    border-color: #d0e9f4;
-    border-style: solid;
-    border-width: 0 0.1em 0.1em;
-    border-bottom-left-radius: 0.4em;
-    border-bottom-right-radius: 0.4em;
-    display: none;
-    left: 0;
-    list-style: none;
-    margin-bottom: 0;
-    padding: 1.8em 0 0 0;
-    position: absolute;
-    right: 0;
-    top: 1.8em; }
-    .language-select__languages.is-visible {
-      display: block; }
+  padding-left: 0; }
+  .language-select__item {
+    display: inline-block;
+    background-color: #635996; }
+    .language-select__item--current {
+      font-weight: bold; }
 
 .logo {
   display: block;
   font-size: 1.6rem;
-  height: 3.75em;
+  height: auto;
   text-indent: -999em;
-  width: 14em; }
+  width: 288px;
+  margin: 38px; }
 
 .main {
   margin: 0 auto;
@@ -194,10 +203,13 @@ ul {
       width: 88%; } }
   @media (min-width: 720px) {
     .main {
-      width: 84%; } }
+      width: 80%; } }
   @media (min-width: 1080px) {
     .main {
-      width: 80%; } }
+      width: 70%; } }
   @media (min-width: 1680px) {
     .main {
-      width: 76%; } }
+      width: 60%; } }
+
+body.--sticky {
+  padding-top: 220px; }

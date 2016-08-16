@@ -1,60 +1,13 @@
 .language-select {
-  display: flex;
-  flex-direction: column;
   list-style: none;
   padding-left: 0;
-  position: relative;
 
-  &__current-language {
-    background: $color-link--lightest;
-    border: 0;
-    border-radius: 1.8em;
-    color: $color-neutral--darkest;
-    cursor: pointer;
-    padding: 0.375em 1.25em; // 6px 20px
-    z-index: 1;
+  &__item {
+    display:inline-block;
+    background-color: #635996;
 
-    &:focus,
-    &:hover,
-    &.is-active {
-      background-color: $color-link--lighter;
-      outline: 0;
-    }
-  }
-
-  &__language {
-    color: $color-neutral--darkest;
-    text-decoration: none;
-    display: block;
-    padding: 0.375em 0.5625em;
-
-    &:hover {
-      background: $color-link--lightest;
-    }
-  }
-
-  &__languages {
-    background: $color-neutral--lightest;
-    border: {
-      color: $color-link--lightest;
-      style: solid;
-      width: 0 0.1em 0.1em;
-    }
-    border-bottom: {
-      left-radius: 0.4em;
-      right-radius: 0.4em;
-    }
-    display: none;
-    left: 0;
-    list-style: none;
-    margin-bottom: 0;
-    padding: 1.8em 0 0 0;
-    position: absolute;
-    right: 0;
-    top: 1.8em;
-
-    &.is-visible {
-      display: block;
+    &--current {
+      font-weight: bold;
     }
   }
 }

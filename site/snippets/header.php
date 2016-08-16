@@ -23,8 +23,4 @@
       <div class="header__navigation">
         <?php snippet('menu'); ?>
       </div>
-
-      <div class="header__langauge-select">
-        <?php snippet('language-select'); ?>
-      </div>
     </header>

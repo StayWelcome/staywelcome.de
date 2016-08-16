@@ -1,5 +1,10 @@
-    <footer role="contentinfo">
+    <footer class="footer" role="contentinfo">
       <?php echo $site->copyright()->kirbytext() ?>
+
+      <div class="footer__language-select">
+        <?php snippet('language-select'); ?>
+      </div>
+      
     </footer>
 
     <?php echo js('assets/script.js'); ?>

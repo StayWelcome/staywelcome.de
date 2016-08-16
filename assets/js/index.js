@@ -1,7 +1,6 @@
-import languageSwitch from './language-switch';
 import animateLogo from './animation';
-
-languageSwitch();
+import {evaluateStickyHeader} from './header';
+import {startToListenForScroll} from './scrolling';
 
 window.addEventListener('load', e => {
     const logoObject = document.getElementById('logoObject');
@@ -16,3 +15,5 @@ window.addEventListener('load', e => {
         }
     }
 });
+
+startToListenForScroll([evaluateStickyHeader], 100);

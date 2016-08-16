@@ -1,0 +1,10 @@
+.footer {
+  position:relative;
+
+  &__language-select {
+    right: 20px;
+    position: absolute;
+    display: inline-block;
+    bottom: -6px;
+  }
+}

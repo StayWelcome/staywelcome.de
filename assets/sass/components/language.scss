@@ -2,12 +2,15 @@
   background: {
     position: left center;
     repeat: no-repeat;
-    size: 1.5em 1.5em; // 24px 24px
+    size: 1.6em 1em;
   }
   display: inline-block;
   font-size: 1.6rem;
-  padding-left: 1.8125em; // 29px
-  text-decoration: inherit;
+  padding: 0.2em 0.4em 0.2em 1.6em;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: white;
 
   &--de {
     background-image: url('/assets/svg/flag--germany.svg');

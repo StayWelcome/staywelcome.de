@@ -1,3 +1,9 @@
 .main {
   @include responsive-container();
 }
+
+body {
+  &.--sticky {
+    padding-top:220px;
+  }
+}
