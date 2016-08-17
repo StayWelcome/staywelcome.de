@@ -4,7 +4,11 @@
 
   &__item {
     display:inline-block;
-    background-color: #635996;
+    background-color: $color-secondary;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
 
     &--current {
       font-weight: bold;

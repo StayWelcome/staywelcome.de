@@ -15,12 +15,13 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <?php snippet('logo'); ?>
-      </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <?php snippet('logo'); ?>
+        </div>
 
-      <div class="header__navigation">
-        <?php snippet('menu'); ?>
-      </div>
-    </header>
+        <div class="header__navigation">
+          <?php snippet('menu'); ?>
+        </div>
+      </header>

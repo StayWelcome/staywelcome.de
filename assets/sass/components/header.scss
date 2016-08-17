@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   margin-bottom: 4em;
   padding: 0.6em 110px 0.6em 2%;
-  border-bottom: 8px solid #635996;
+  border-bottom: 8px solid $color-primary;
 
   transition-duration: 0.3s;
   transition-property: all;
@@ -38,16 +38,17 @@
       padding: 0;
 
       li {
-        display: inline-block;
-        background-color: #635996;
-        padding: 10px 20px;
         margin: 0;
+        list-style-type: none;
 
         &:not(last-child) {
           margin-right: 20px;
         }
         
         a {
+          display: inline-block;
+          background-color: $color-secondary;
+          padding: 10px 20px;
           color: white;
           text-decoration: none;
         }

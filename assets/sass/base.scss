@@ -12,6 +12,11 @@ body {
   background: $color-neutral--lightest;
   color: $color-neutral--darkest;
   font-family: $font-family-content;
+  height: 100%;
+
+  &.--sticky {
+    padding-top:220px;
+  }
 }
 
 button {
@@ -32,6 +37,10 @@ fieldset {
 
 form {
   margin-bottom: 1.2em;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1,
@@ -63,6 +72,7 @@ h3 {
 }
 
 html {
+  height: 100%;
   font-size: 62.5%;
   line-height: 1.5;
 }

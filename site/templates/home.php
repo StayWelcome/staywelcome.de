@@ -6,8 +6,8 @@
   <?php foreach($page->children() as $offer): ?>
     <?php snippet('offer', array('offer' => $offer)); ?>
   <?php endforeach; ?>
-</main>
 
-<?php snippet('contact-form'); ?>
+  <?php snippet('contact-form'); ?>
+</main>
 
 <?php snippet('footer'); ?>
