@@ -201,7 +201,7 @@ ul {
   padding-left: 0; }
   .language-select__item {
     display: inline-block;
-    background-color: #3ca4d0; }
+    background-color: #3ba5d1; }
     .language-select__item:not(:last-child) {
       margin-right: 10px; }
     .language-select__item--current {
