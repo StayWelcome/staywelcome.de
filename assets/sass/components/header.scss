@@ -4,11 +4,14 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 4em;
-  padding: 0.6em 110px 0.6em 2%;
+  padding: 0.6em 2% 0.6em 2%;
   border-bottom: 8px solid $color-primary;
-
   transition-duration: 0.3s;
   transition-property: all;
+
+  @media only screen and (min-width: 712px) {
+    padding: 0.6em 110px 0.6em 2%;
+  }
 
   &--sticky {
     position: fixed;
@@ -20,7 +23,14 @@
     top:0;
 
     .logo {
-      height: 11.9mm;
+      position: absolute;
+      visibility: hidden;
+
+      @media only screen and (min-width: 712px) {
+        height: 11.9mm;
+        position: relative;
+        visibility: visible;
+      }
     }
   }
 
@@ -32,10 +42,14 @@
 
     ul {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       margin: 0;
       padding: 0;
+
+      @media only screen and (min-width: 712px) {
+        justify-content: flex-end;
+      }
 
       li {
         margin: 0;
