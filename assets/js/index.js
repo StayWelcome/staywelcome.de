@@ -3,6 +3,9 @@ import {evaluateStickyHeader} from './header';
 import {startToListenForScroll} from './scrolling';
 
 window.addEventListener('load', e => {
+
+    evaluateStickyHeader();
+
     const logoObject = document.getElementById('logoObject');
 
     if (typeof logoObject !== 'undefined') {

@@ -136,7 +136,7 @@ ul {
   @media only screen and (min-width: 712px) {
     .header {
       padding: 0.6em 110px 0.6em 2%; } }
-  .header--sticky {
+  .header.is-sticky {
     position: fixed;
     background-color: white;
     height: 70px;
@@ -144,11 +144,11 @@ ul {
     z-index: 100;
     border-width: 2px;
     top: 0; }
-    .header--sticky .logo {
+    .header.is-sticky .logo {
       position: absolute;
       visibility: hidden; }
       @media only screen and (min-width: 712px) {
-        .header--sticky .logo {
+        .header.is-sticky .logo {
           height: 11.9mm;
           position: relative;
           visibility: visible; } }

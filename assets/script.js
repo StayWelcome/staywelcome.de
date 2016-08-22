@@ -57,6 +57,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	window.addEventListener('load', function (e) {
+
+	    (0, _header.evaluateStickyHeader)();
+
 	    var logoObject = document.getElementById('logoObject');
 
 	    if (typeof logoObject !== 'undefined') {
@@ -8340,7 +8343,17 @@
 	});
 	exports.evaluateStickyHeader = evaluateStickyHeader;
 
+	var STICKY_STATE_CLASS = 'is-sticky';
+
 	var headerElement = document.querySelector('.header');
+	var pseudoHeaderElement = createPseudoHeaderElement();
+
+	function createPseudoHeaderElement() {
+	    var element = document.createElement('div');
+	    element.style.display = 'block';
+	    element.style.visibility = 'hídden';
+	    return element;
+	}
 
 	function evaluateStickyHeader() {
 	    if (window.scrollY > 50) {
@@ -8351,13 +8364,18 @@
 	}
 
 	function makeHeaderSticky() {
-	    document.body.classList.add('--sticky');
-	    headerElement.classList.add('header--sticky');
+	    if (!headerElement.classList.contains(STICKY_STATE_CLASS)) {
+	        pseudoHeaderElement.style.height = headerElement.offsetHeight + 'px';
+	        headerElement.parentElement.insertBefore(pseudoHeaderElement, headerElement);
+	        headerElement.classList.add(STICKY_STATE_CLASS);
+	    }
 	}
 
 	function makeHeaderUnsticky() {
-	    document.body.classList.remove('--sticky');
-	    headerElement.classList.remove('header--sticky');
+	    if (headerElement.classList.contains(STICKY_STATE_CLASS)) {
+	        headerElement.parentElement.removeChild(pseudoHeaderElement);
+	        headerElement.classList.remove(STICKY_STATE_CLASS);
+	    }
 	}
 
 /***/ },
