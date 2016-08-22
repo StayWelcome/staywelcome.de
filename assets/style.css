@@ -131,14 +131,13 @@ ul {
   margin-bottom: 4em;
   padding: 0.6em 2% 0.6em 2%;
   border-bottom: 8px solid #635996;
-  transition-duration: 0.3s;
-  transition-property: all; }
+  transition: all 0.3s; }
   @media only screen and (min-width: 712px) {
     .header {
       padding: 0.6em 110px 0.6em 2%; } }
   .header.is-sticky {
     position: fixed;
-    background-color: white;
+    background-color: #fff;
     height: 70px;
     width: 100%;
     z-index: 100;
@@ -149,7 +148,7 @@ ul {
       visibility: hidden; }
       @media only screen and (min-width: 712px) {
         .header.is-sticky .logo {
-          height: 11.9mm;
+          height: 4.5rem;
           position: relative;
           visibility: visible; } }
   .header__navigation {
@@ -172,25 +171,24 @@ ul {
           display: inline-block;
           background-color: #635996;
           padding: 10px 20px;
-          color: white;
-          text-decoration: none; }
+          color: #fff;
+          text-decoration: underline; }
 
 .footer {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: #635996;
   padding: 20px;
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   .footer p {
     flex-grow: 1;
-    color: white;
+    color: #fff;
     margin: 0; }
     .footer p a {
-      color: white; }
-  .footer__language-select {
-    float: right; }
+      color: #fff; }
 
 .language {
   background-position: left center;
@@ -202,7 +200,7 @@ ul {
   text-decoration: none;
   width: 100%;
   height: 100%;
-  color: white; }
+  color: #fff; }
   .language--de {
     background-image: url("/assets/svg/flag--germany.svg"); }
   .language--en {

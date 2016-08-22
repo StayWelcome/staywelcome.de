@@ -6,8 +6,7 @@
   margin-bottom: 4em;
   padding: 0.6em 2% 0.6em 2%;
   border-bottom: 8px solid $color-primary;
-  transition-duration: 0.3s;
-  transition-property: all;
+  transition: all 0.3s;
 
   @media only screen and (min-width: 712px) {
     padding: 0.6em 110px 0.6em 2%;
@@ -15,7 +14,7 @@
 
   &.is-sticky {
     position: fixed;
-    background-color: white;
+    background-color: $color-neutral--lightest;
     height: 70px;
     width: 100%;
     z-index: 100;
@@ -27,7 +26,7 @@
       visibility: hidden;
 
       @media only screen and (min-width: 712px) {
-        height: 11.9mm;
+        height: 4.5rem;
         position: relative;
         visibility: visible;
       }
@@ -63,8 +62,8 @@
           display: inline-block;
           background-color: $color-primary;
           padding: 10px 20px;
-          color: white;
-          text-decoration: none;
+          color: $color-neutral--lightest;
+          text-decoration: underline;
         }
       }
     }
