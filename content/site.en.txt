@@ -18,4 +18,4 @@ Copyright: © 2015-(date: Year) (link: http://staywelcome.de text: StayWelcome)
 
 ----
 
-Contactformrecipient: dominik.habersack@netlight.com
+Contactformrecipient: hallo@staywelcome.de
