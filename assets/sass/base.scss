@@ -13,10 +13,6 @@ body {
   color: $color-neutral--darkest;
   font-family: $font-family-content;
   height: 100%;
-
-  &.--sticky {
-    padding-top:220px;
-  }
 }
 
 button {
