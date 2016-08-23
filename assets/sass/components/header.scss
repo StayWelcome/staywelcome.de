@@ -1,16 +1,8 @@
 .header {
   position: relative;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 4em;
-  padding: 0.6em 2% 0.6em 2%;
   border-bottom: 8px solid $color-primary;
   transition: all 0.3s;
-
-  @media only screen and (min-width: 712px) {
-    padding: 0.6em 110px 0.6em 2%;
-  }
 
   &.is-sticky {
     position: fixed;
@@ -24,9 +16,12 @@
     .logo {
       position: absolute;
       visibility: hidden;
+      margin: 0;
 
-      @media only screen and (min-width: 712px) {
+      @media only screen and ($query-medium) {
         height: 4.5rem;
+        width: 15rem;
+        margin-top: 0.5rem;
         position: relative;
         visibility: visible;
       }
@@ -34,38 +29,51 @@
   }
 
   &__logo {
+    width: 100%;
+     @media only screen and ($query-medium ) {
+       width: auto;
+     }
+  }
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    @include responsive-container();
   }
 
   &__navigation {
     flex-grow: 1;
 
-    ul {
+    &__links {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0;
+      margin: 1rem 0;
       padding: 0;
 
-      @media only screen and (min-width: 712px) {
+      @media only screen and ($query-medium) {
         justify-content: flex-end;
+        margin: 0;
       }
+    }
 
-      li {
+    &__link {
         margin: 0;
         list-style-type: none;
 
-        &:not(last-child) {
-          margin-right: 20px;
+        &:not(:last-child) {
+          margin-right: 2rem;
         }
         
         a {
           display: inline-block;
           background-color: $color-primary;
-          padding: 10px 20px;
+          padding: 1rem 2rem;
           color: $color-neutral--lightest;
           text-decoration: underline;
         }
       }
-    }
   }
 }

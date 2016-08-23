@@ -17,11 +17,13 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__logo">
-          <?php snippet('logo'); ?>
-        </div>
+        <div class="header__container">
+          <div class="header__logo">
+            <?php snippet('logo'); ?>
+          </div>
 
-        <div class="header__navigation">
-          <?php snippet('menu'); ?>
+          <div class="header__navigation">
+            <?php snippet('menu'); ?>
+          </div>
         </div>
       </header>
