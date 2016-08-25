@@ -15,16 +15,15 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <?php snippet('logo'); ?>
-      </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <?php snippet('logo'); ?>
+          </div>
 
-      <div class="header__navigation">
-        <?php snippet('menu'); ?>
-      </div>
-
-      <div class="header__langauge-select">
-        <?php snippet('language-select'); ?>
-      </div>
-    </header>
+          <div class="header__navigation">
+            <?php snippet('menu'); ?>
+          </div>
+        </div>
+      </header>

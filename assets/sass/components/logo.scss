@@ -1,7 +1,13 @@
 .logo {
   display: block;
   font-size: 1.6rem;
-  height: 3.75em; // 60px
-  text-indent: -999em;
-  width: 14em; // 224px
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 20%;
+
+  @media only screen and ($query-medium) {
+    width: 288px;
+    margin: 3.8rem 0;
+    padding: 0;
+  }
 }

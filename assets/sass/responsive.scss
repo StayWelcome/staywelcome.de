@@ -17,14 +17,14 @@ $query-extra-large: 'min-width: (140 * 12px)'; // + 50
   }
 
   @media ($query-medium) {
-    width: 84%;
-  }
-
-  @media ($query-large) {
     width: 80%;
   }
 
+  @media ($query-large) {
+    width: 70%;
+  }
+
   @media ($query-extra-large) {
-    width: 76%;
+    width: 60%;
   }
 }

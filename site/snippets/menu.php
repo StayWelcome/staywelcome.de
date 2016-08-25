@@ -1,7 +1,7 @@
 <nav role="navigation">
-  <ul>
+  <ul class="header__navigation__links">
     <?php foreach($pages->visible() as $p): ?>
-      <li>
+      <li class="header__navigation__link">
         <a <?php e($p->isOpen(), ' class="is-active"'); ?> href="<?php echo $p->url(); ?>">
           <?php echo $p->title()->html() ?>
         </a>

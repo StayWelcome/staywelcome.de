@@ -1,17 +1,79 @@
 .header {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1.2em;
-  padding: 0.6em 2%;
+  position: relative;
+  margin-bottom: 4em;
+  border-bottom: 8px solid $color-primary;
+  transition: all 0.3s;
 
-  &__language-select {
+  &.is-sticky {
+    position: fixed;
+    background-color: $color-neutral--lightest;
+    height: 70px;
+    width: 100%;
+    z-index: 100;
+    border-width: 2px;
+    top:0;
+
+    .logo {
+      position: absolute;
+      visibility: hidden;
+      margin: 0;
+
+      @media only screen and ($query-medium) {
+        height: 4.5rem;
+        width: 15rem;
+        margin-top: 0.5rem;
+        position: relative;
+        visibility: visible;
+      }
+    }
   }
 
   &__logo {
+    width: 100%;
+     @media only screen and ($query-medium ) {
+       width: auto;
+     }
+  }
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    @include responsive-container();
   }
 
   &__navigation {
     flex-grow: 1;
+
+    &__links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0;
+      padding: 0;
+
+      @media only screen and ($query-medium) {
+        justify-content: flex-end;
+        margin: 0;
+      }
+    }
+
+    &__link {
+        margin: 0;
+        list-style-type: none;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+        
+        a {
+          display: inline-block;
+          background-color: $color-primary;
+          padding: 1rem 2rem;
+          color: $color-neutral--lightest;
+          text-decoration: underline;
+        }
+      }
   }
 }

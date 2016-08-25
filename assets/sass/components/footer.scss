@@ -1,0 +1,22 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $color-primary;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    flex-grow: 1;
+    color: $color-neutral--lightest;
+    margin: 0;
+    a {
+      color: $color-neutral--lightest;
+    }
+  }
+
+  &__language-select {
+  }
+}

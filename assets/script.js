@@ -46,19 +46,20 @@
 
 	'use strict';
 
-	var _languageSwitch = __webpack_require__(1);
-
-	var _languageSwitch2 = _interopRequireDefault(_languageSwitch);
-
-	var _animation = __webpack_require__(2);
+	var _animation = __webpack_require__(1);
 
 	var _animation2 = _interopRequireDefault(_animation);
 
+	var _header = __webpack_require__(3);
+
+	var _scrolling = __webpack_require__(4);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _languageSwitch2.default)();
-
 	window.addEventListener('load', function (e) {
+
+	    (0, _header.evaluateStickyHeader)();
+
 	    var logoObject = document.getElementById('logoObject');
 
 	    if (typeof logoObject !== 'undefined') {
@@ -72,30 +73,10 @@
 	    }
 	});
 
+	(0, _scrolling.startToListenForScroll)([_header.evaluateStickyHeader], 100);
+
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	exports.default = function () {
-	  var currentLanguage = document.querySelector('.js-language-switch');
-	  var languageOptions = document.querySelector('.js-language-options');
-
-	  currentLanguage.addEventListener('click', function () {
-	    currentLanguage.classList.toggle('is-active');
-	    languageOptions.classList.toggle('is-visible');
-	  });
-	};
-
-	;
-
-/***/ },
-/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -115,7 +96,7 @@
 	    }
 	};
 
-	var _snapsvg = __webpack_require__(3);
+	var _snapsvg = __webpack_require__(2);
 
 	var _snapsvg2 = _interopRequireDefault(_snapsvg);
 
@@ -171,7 +152,7 @@
 	;
 
 /***/ },
-/* 3 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_LOCAL_MODULE_0__;var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*** IMPORTS FROM imports-loader ***/
@@ -8350,6 +8331,88 @@
 	return Snap;
 	}));
 	}.call(window));
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.evaluateStickyHeader = evaluateStickyHeader;
+
+	var STICKY_STATE_CLASS = 'is-sticky';
+
+	var headerElement = document.querySelector('.header');
+	var pseudoHeaderElement = createPseudoHeaderElement();
+
+	function createPseudoHeaderElement() {
+	    var element = document.createElement('div');
+	    element.style.display = 'block';
+	    element.style.visibility = 'hídden';
+	    return element;
+	}
+
+	function evaluateStickyHeader() {
+	    if (window.scrollY > 50) {
+	        makeHeaderSticky();
+	    } else {
+	        makeHeaderUnsticky();
+	    }
+	}
+
+	function makeHeaderSticky() {
+	    if (!headerElement.classList.contains(STICKY_STATE_CLASS)) {
+	        pseudoHeaderElement.style.height = headerElement.offsetHeight + 'px';
+	        headerElement.parentElement.insertBefore(pseudoHeaderElement, headerElement);
+	        headerElement.classList.add(STICKY_STATE_CLASS);
+	    }
+	}
+
+	function makeHeaderUnsticky() {
+	    if (headerElement.classList.contains(STICKY_STATE_CLASS)) {
+	        headerElement.parentElement.removeChild(pseudoHeaderElement);
+	        headerElement.classList.remove(STICKY_STATE_CLASS);
+	    }
+	}
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.startToListenForScroll = startToListenForScroll;
+	exports.stopToListenForScroll = stopToListenForScroll;
+	var timeoutId = null;
+	var listener = null;
+
+	/**
+	 * Takes an array of functions that should be executed when the page is scrolled.
+	 *
+	 * @param {function[]} funcArray
+	 **/
+	function startToListenForScroll(funcArray, timeout) {
+	    listener = window.addEventListener('scroll', function (e) {
+	        if (timeoutId === null) {
+	            timeoutId = window.setTimeout(function () {
+	                funcArray.forEach(function (func) {
+	                    return func(e);
+	                });
+	                timeoutId = null;
+	            }, timeout);
+	        }
+	    });
+	}
+
+	function stopToListenForScroll() {
+	    window.removeEventListener('scroll', listener);
+	}
 
 /***/ }
 /******/ ]);
