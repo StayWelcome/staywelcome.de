@@ -12,9 +12,9 @@ function createPseudoHeaderElement() {
 }
 
 export function evaluateStickyHeader() {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 75) {
         makeHeaderSticky();
-    } else {
+    } else if (window.scrollY < 50) {
         makeHeaderUnsticky();
     }
 }
