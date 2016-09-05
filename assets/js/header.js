@@ -12,19 +12,29 @@ function createPseudoHeaderElement() {
 }
 
 export function evaluateStickyHeader() {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 75) {
         makeHeaderSticky();
-    } else {
+    } else if (window.scrollY < 50) {
         makeHeaderUnsticky();
     }
 }
 
 function makeHeaderSticky() {
     if (!headerElement.classList.contains(STICKY_STATE_CLASS)) {
-        pseudoHeaderElement.style.height = headerElement.offsetHeight + 'px';
+        pseudoHeaderElement.style.height = getAbsoluteHeight(headerElement) + 'px';
         headerElement.parentElement.insertBefore(pseudoHeaderElement, headerElement);
         headerElement.classList.add(STICKY_STATE_CLASS);
     }
+}
+
+function getAbsoluteHeight(el) {
+  var styles = window.getComputedStyle(el);
+  var spacing = parseFloat(styles['paddingTop']) +
+                parseFloat(styles['paddingBottom']) +
+                parseFloat(styles['marginTop']) +  
+                parseFloat(styles['marginBottom']);
+
+  return Math.ceil(el.offsetHeight + spacing);
 }
 
 function makeHeaderUnsticky() {
