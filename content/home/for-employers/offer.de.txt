@@ -1,8 +1,12 @@
-Title: Du bist Arbeitgeber und auf der Suche nach neuen Mitarbeitern für dein Team? Wir helfen dir durch:
+Title: Du bist Arbeitgeber und auf der Suche nach neuen Mitarbeitern für dein Team?
 
 ----
 
-Content: 
+ListTitle: Wir helfen dir durch:
+
+----
+
+Content:
 
 - Beratung hinsichtlich der Einstellung von Asylbewerbern und anerkannten Flüchtlingen
 - Vorstellung von geeigneten Bewerbern

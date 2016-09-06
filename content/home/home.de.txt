@@ -1,21 +1,7 @@
-Title: Zuhause
+Title: In jedem echten Willkommen gibt es den, der einlädt, anzukommen und sich zu Hause zu fühlen und es gibt den, der sich eingeladen fühlt und dazu beiträgt, dass er auch gern gesehen bleibt.
 
 ----
 
-Text: This is working.
+Abstract:  
 
-----
-
-Abstract: 
-
-In jedem echten Willkommen gibt es den, der einlädt, anzukommen und sich zu Hause zu fühlen und es gibt den, der sich eingeladen fühlt und dazu beiträgt, dass er auch gern gesehen bleibt. 
-
-Unsere Aufforderung “stay welcome” wendet sich deshalb an unsere Gesellschaft zum einen, an unsere Neuankömmlinge zum anderen.
-
-Wir schaffen Netzwerke für Neuankömmlinge in Stadt und Landkreis München und unterstützen sie dabei, sich nachhaltig in die Gesellschaft zu integrieren.
-
-## Was machen wir?
-
-----
-
-Madeupvalue: 
+Unsere Aufforderung “stay welcome” wendet sich deshalb an unsere Gesellschaft zum einen, an unsere Neuankömmlinge zum anderen. Wir schaffen Netzwerke für Neuankömmlinge in Stadt und Landkreis München und unterstützen sie dabei, sich nachhaltig in die Gesellschaft zu integrieren.

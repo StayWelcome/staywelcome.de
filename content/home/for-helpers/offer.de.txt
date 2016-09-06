@@ -1,4 +1,8 @@
-Title: Du bist Mitglied eines Helferkreises oder möchtest dich freiwillig engagieren? Wir sind für dich:
+Title: Du bist Mitglied eines Helferkreises oder möchtest dich freiwillig engagieren?
+
+----
+
+ListTitle: Wir sind für dich:
 
 ----
 

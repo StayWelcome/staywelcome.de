@@ -1,6 +1,6 @@
 <form class="contact-form" method="post">
   <fieldset>
-    <legend>Contact</legend>
+    <legend><?php echo $formTitle ?></legend>
 
     <?php if ($alert): ?>
       <?php foreach($alert as $message): ?>
@@ -9,19 +9,19 @@
     <?php endif; ?>
 
     <label for="contact-email">
-      Email
+      <?php echo $emailAddressTitle ?>
     </label>
 
     <input id="contact-email" name="contact-email" placeholder="email@example.com" required type="email">
 
     <label for="contact-message">
-      Message
+      <?php echo $messageTitle ?>
     </label>
 
     <textarea id="contact-message" name="contact-message" required rows="8"></textarea>
 
     <button class="contact-form__submit" name="contact-submit" type="submit" value="submit">
-      Send message
+      <?php echo $sendButton ?>
     </button>
   </fieldset>
 </form>

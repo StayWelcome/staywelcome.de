@@ -2,11 +2,11 @@ Abstract:
 
 ----
 
-Madeupvalue: 
+Title: Du bist erst seit Kurzem in Deutschland, weil du aus deiner Heimat geflohen bist?
 
 ----
 
-Title: Du bist erst seit Kurzem in Deutschland, weil du aus deiner Heimat geflohen bist? Wir bieten dir:
+ListTitle: Wir bieten dir:
 
 ----
 
