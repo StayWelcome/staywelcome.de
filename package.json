@@ -31,6 +31,7 @@
     "gulp-connect-php": "0.0.7",
     "gulp-jshint": "^2.0.1",
     "gulp-sass": "^2.3.2",
+    "gulp-ssh": "^0.6.0",
     "imports-loader": "^0.6.5",
     "jshint": "^2.9.2",
     "normalize.css": "^4.2.0",
