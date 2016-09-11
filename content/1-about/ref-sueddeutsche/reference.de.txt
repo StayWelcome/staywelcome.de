@@ -1,0 +1,9 @@
+Title: Süddeutsche Zeitung
+
+----
+
+ImageFile: sueddeutsche.png
+
+----
+
+Url: http://www.sueddeutsche.de/muenchen/fluechtlinge-am-arbeitsmarkt-zur-stelle-1.2702421

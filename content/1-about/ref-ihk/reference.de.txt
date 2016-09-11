@@ -1,0 +1,9 @@
+Title: IHK Magazin
+
+----
+
+ImageFile: ihk.png
+
+----
+
+Url: https://www.ihk-muenchen.de/ihk/Magazin-Wirtschaft/IHK_Magazin-06_16_Ansicht.pdf

@@ -1,0 +1,18 @@
+Title: Kontakt
+
+----
+
+EmailAddressTitle: Deine Mailadresse:
+
+----
+
+SendButtonTitle: Nachricht abschicken
+
+----
+
+MessageTitle: Deine Nachricht an uns:
+
+----
+
+Text:
+Nutze bitte das folgende Formular, wenn du uns kontaktieren möchtest. Wir melden uns dann gerne zeitnah bei dir!

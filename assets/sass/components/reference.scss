@@ -1,0 +1,22 @@
+.references {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__reference {
+        width: 200px;
+        height: 200px;
+        border: 5px solid $color-link--lighter;
+        padding: 1rem;
+        margin: 2rem;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    &__image {
+        display: block;
+    }
+}

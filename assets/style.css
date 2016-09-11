@@ -277,3 +277,20 @@ ul {
 .wrapper {
   position: relative;
   min-height: 100%; }
+
+.references {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .references__reference {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #7e75ae;
+    padding: 1rem;
+    margin: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .references__image {
+    display: block; }

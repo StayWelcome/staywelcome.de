@@ -1,16 +1,15 @@
-Title: About
+Title: Über Uns
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+Text:
 
-## Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+Als im vergangenen Spätsommer hunderte von Münchnern die per Zug ankommenden Flüchtlinge begrüßten und willkommen hießen, begannen auch einige Mitarbeiter der IT- und Management Beratung Netlight Consulting in ihrer Umgebung mit den neuen Nachbarn in Kontakt zu kommen. Dies drehte sich anfangs hauptsächlich um gemeinsame Fußballspiele und Ausflüge an die Isar oder in den Olympiapark. Im Rahmen der Events mit den Flüchtlingen wurde schnell klar, dass die größte Hilfe für die Menschen neben dem Erwerb der deutschen Sprache Unterstützung bei der Suche nach Arbeit sei. Da von Anfang an der Wunsch bestand, den Flüchtlingen nachhaltig bei ihrer Integration zu helfen, rief Netlight im September 2015 die Initiative “stay welcome” (vorm. “jobs4refugees.org”) ins Leben, und stellte hierfür Werkstudenten ein, die sich ausschließlich dem Thema der Arbeitsmarktintegration von Flüchtlingen im Raum München widmeten. Neben der finanziellen Unterstützung in Form der Werkstudentenstellen, stellt Netlight für die Vermittlungsarbeit Büroflächen und Arbeitsmittel zur Verfügung und steht dem Team jederzeit mit seinen erfahrenen Consultants beratend zur Seite, ohne dabei gewerbliche Zwecke jeglicher Art zu verfolgen. Interessierte Personen und Unternehmen sind herzlich eingeladen diesem Modell zu folgen und sich Stay Welcome e.V. anzuschließen.
 
-(image: about.jpg)
+## Unsere Erfolge
 
-### Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+Eine Schlüsselkomponente unseres Erfolgs besteht darin, dass wir uns als Partner auf Augenhöhe der Neuankömmlinge sehen, und mit ihnen zusammen an ihren Erfolgen arbeiten, anstatt für sie Dienstleistungen zu erbringen. Wir lernen die Asylbewerber persönlich kennen, analysieren ihre Fähigkeiten und Qualifikationen, und erörtert mit ihnen ihre Interessen und Möglichkeiten. Parallel dazu werden Arbeitgeber kontaktiert, umfassend informiert und bei Interesse mit geeigneten Kandidaten in Kontakt gebracht. Arbeitgeber und Kandidat erfahren volle Unterstützung und Begleitung von Auswahlprozess, Vorstellungsgespräch, Antragstellung auf Arbeitserlaubnis über Nachverfolgung des Antrags bis hin zur Arbeitsaufnahme und weiteren Betreuung des Arbeitsverhältnisses. Durch unsere pragmatische und flexible Arbeitsweise konnten wir bisher vielen Flüchtlingen im Raum München in einer Arbeitsstelle oder in Bildungsmaßnahmen verhelfen.
 
-#### Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+## Unsere Ziele
+
+Wir möchten mit der Initiative ein positives Zeichen setzen um andere Unternehmen zu ermutigen, das gleiche zu tun. Das Ziel von “stay welcome!” ist es, ein Netzwerk an Firmen und Helfern zu etablieren um die Reichweite der Unterstützung weiter auszubauen.

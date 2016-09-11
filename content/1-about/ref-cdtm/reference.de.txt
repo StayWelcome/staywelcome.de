@@ -1,0 +1,9 @@
+Title: CDTM
+
+----
+
+ImageFile: cdtm.png
+
+----
+
+Url: http://www.cdtm.de/cdtm-student-co-runs-refugee-employment-initiative/
